@@ -11,3 +11,14 @@ Hay dos formas de usar `git reset` : con el argumento `--hard`, borrando toda la
 
 Para ver los logs en una linea(mas conveniente)
 `git log --oneline`
+
+Para ver los cambios a nivel de bytes
+`git log --stat`
+
+Para eliminar los ultimos cambios en el Stage
+
+`git reset HEAD`
+
+`git rm --cached` : Elimina los archivos del área de Staging y del próximo commit pero los mantiene en nuestro disco duro.
+
+`git rm --force` : Elimina los archivos de Git y del disco duro. Git siempre guarda todo, por lo que podemos acceder al registro de la existencia de los archivos, de modo que podremos recuperarlos si es necesario (pero debemos usar comandos más avanzados).
